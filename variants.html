@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Klinikai és kiegészítő variánsok magyar értelmezése.">
+  <title>Variánsok | Genomikai leletek</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="variants">
+  <aside class="sidebar" id="oldalsav">
+    <a class="brand" href="index.html" aria-label="Genomikai leletek - áttekintés">
+      <span class="brand-symbol"><i data-lucide="dna" aria-hidden="true"></i></span>
+      <span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span>
+    </a>
+    <nav aria-label="Fő navigáció"><a class="nav-link" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span>Áttekintés</span></a>
+<a class="nav-link" href="summary.html"><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Gyakorlati riport</span></a>
+<a class="nav-link" href="actions.html"><i data-lucide="list-checks" aria-hidden="true"></i><span>Teendők</span></a>
+<a class="nav-link active" href="variants.html"><i data-lucide="binary" aria-hidden="true"></i><span>Variánsok</span></a>
+<a class="nav-link" href="vcf.html"><i data-lucide="dna" aria-hidden="true"></i><span>VCF-elemzés</span></a>
+<a class="nav-link" href="family.html"><i data-lucide="git-branch" aria-hidden="true"></i><span>Családi előzmény</span></a>
+<a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span>Gyógyszerek</span></a>
+<a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span>Életmód</span></a>
+<a class="nav-link" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Klinikai riportok</span></a>
+<a class="nav-link" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span>Riportkönyvtár</span></a>
+<a class="nav-link" href="sources.html"><i data-lucide="book-open-check" aria-hidden="true"></i><span>Források</span></a></nav>
+    <div class="privacy-note">
+      <i data-lucide="shield-check" aria-hidden="true"></i>
+      <div><strong>Helyi és privát</strong><span>A felület a gépeden fut. Nem diagnózis és nem kezelési utasítás.</span></div>
+    </div>
+  </aside>
+  <header class="mobile-bar">
+    <a class="mobile-brand" href="index.html"><i data-lucide="dna" aria-hidden="true"></i><strong>GENOMIKAI LELETEK</strong></a>
+    <button class="icon-button" type="button" data-nav-toggle aria-controls="oldalsav" aria-expanded="false" aria-label="Navigáció megnyitása" title="Navigáció">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+  </header>
+  <main class="main-content">
+    
+<header class="page-header reveal">
+  <div class="kicker">Variánsok és besorolások</div>
+  <h1>Variánsok klinikai értelmezése</h1>
+  <p class="page-lead">Minden tételnél a jelenlegi tudományos besorolás, a gén funkciója, a klinikai jelentőség és az indokolt teendő látszik. A variánskód önmagában nem tünet és nem diagnózis.</p>
+  <div class="page-meta">28 értelmezett variáns · ClinVar-kiadás: 2026-09-13</div>
+</header>
+
+<section class="featured-variants reveal" data-featured-variants></section>
+<section class="evidence-note reveal">
+  <div class="evidence-icon"><i data-lucide="link-2-off" aria-hidden="true"></i></div>
+  <div><strong>Fontos minőségellenőrzési megjegyzés</strong><p>A Dante PDF-ekben kiírt ClinVar-számok nem egyeztek a jelenlegi, HGVS alapján pontosan illesztett rekordokkal. A C8B variáns jelenlegi ClinVar Variation ID-je 17038, a LAMA3 c.222del exact rekordja 370752. Ezért a dashboard a gén + HGVS + fehérjeváltozás alapján hivatkozik, nem vakon a PDF-ben szereplő számon.</p></div>
+</section>
+<section class="content-band flush reveal">
+  <div class="section-heading">
+    <div><span class="section-index">28</span><h2>Jelenlegi klinikai értelmezés</h2></div>
+  </div>
+  <div class="filter-row">
+    <label class="search-field"><i data-lucide="search" aria-hidden="true"></i><span class="sr-only">Variáns keresése</span><input type="search" data-variant-search placeholder="Keresés gén, rsID vagy jelentés szerint"></label>
+    <label><span class="sr-only">Besorolás szűrése</span><select data-variant-filter><option value="">Minden besorolás</option><option value="confirm">Megerősítendő</option><option value="review">Bizonytalan / áttekintendő</option><option value="context">Asszociációs / kontextusfüggő</option><option value="benign">Jóindulatú jellegű</option></select></label>
+  </div>
+  <div class="variant-table-wrap">
+    <table class="data-table variant-table">
+      <thead><tr><th>Variáns és besorolás</th><th>Génfunkció</th><th>Klinikai jelentőség</th><th>Teendő</th><th>Forrás</th></tr></thead>
+      <tbody data-variant-table></tbody>
+    </table>
+  </div>
+</section>
+<section class="glossary reveal">
+  <h2>Gyors szótár</h2>
+  <dl>
+    <div><dt>Patogén</dt><dd>Megfelelő bizonyítékkal betegséget okozó variáns, de a klinikai jelentést az öröklésmód, a példányszám és a tünetek együtt határozzák meg.</dd></div>
+    <div><dt>Valószínűleg patogén</dt><dd>Nagy valószínűséggel kóroki, klinikai döntésben általában a patogénhez hasonlóan kezelik, de megerősítés és a tüneti összefüggés fontos.</dd></div>
+    <div><dt>Heterozigóta</dt><dd>A két génpéldány közül az egyik hordozza a variánst.</dd></div>
+    <div><dt>Homozigóta</dt><dd>Mindkét génpéldányon ugyanaz a variáns van. Recesszív betegségnél ez lényegesen más jelentőségű lehet.</dd></div>
+    <div><dt>VUS</dt><dd>Bizonytalan jelentőségű variáns; önmagában nem használható kezelés vagy szűrés megváltoztatására.</dd></div>
+    <div><dt>Recesszív</dt><dd>A betegséghez általában mindkét génpéldány érintettsége szükséges; egyetlen variáns többnyire hordozói állapot.</dd></div>
+    <div><dt>Jóindulatú</dt><dd>A jelenlegi bizonyíték szerint nem okozza az adott örökletes betegséget. Ettől a génnek lehet más, valóban kóroki variánsa.</dd></div>
+  </dl>
+</section>
+
+    <footer class="site-footer">
+      <span>Frissítve: 2026. szeptember 23.</span>
+      <span>175 PDF · nyers VCF · jelenlegi ClinVar · magyar magyarázat</span>
+    </footer>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A genetikai dashboard szakmai forrásai és módszertana.">
+  <title>Források | Genomikai leletek</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="sources">
+  <aside class="sidebar" id="oldalsav">
+    <a class="brand" href="index.html" aria-label="Genomikai leletek - áttekintés">
+      <span class="brand-symbol"><i data-lucide="dna" aria-hidden="true"></i></span>
+      <span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span>
+    </a>
+    <nav aria-label="Fő navigáció"><a class="nav-link" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span>Áttekintés</span></a>
+<a class="nav-link" href="summary.html"><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Gyakorlati riport</span></a>
+<a class="nav-link" href="actions.html"><i data-lucide="list-checks" aria-hidden="true"></i><span>Teendők</span></a>
+<a class="nav-link" href="variants.html"><i data-lucide="binary" aria-hidden="true"></i><span>Variánsok</span></a>
+<a class="nav-link" href="vcf.html"><i data-lucide="dna" aria-hidden="true"></i><span>VCF-elemzés</span></a>
+<a class="nav-link" href="family.html"><i data-lucide="git-branch" aria-hidden="true"></i><span>Családi előzmény</span></a>
+<a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span>Gyógyszerek</span></a>
+<a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span>Életmód</span></a>
+<a class="nav-link" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Klinikai riportok</span></a>
+<a class="nav-link" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span>Riportkönyvtár</span></a>
+<a class="nav-link active" href="sources.html"><i data-lucide="book-open-check" aria-hidden="true"></i><span>Források</span></a></nav>
+    <div class="privacy-note">
+      <i data-lucide="shield-check" aria-hidden="true"></i>
+      <div><strong>Helyi és privát</strong><span>A felület a gépeden fut. Nem diagnózis és nem kezelési utasítás.</span></div>
+    </div>
+  </aside>
+  <header class="mobile-bar">
+    <a class="mobile-brand" href="index.html"><i data-lucide="dna" aria-hidden="true"></i><strong>GENOMIKAI LELETEK</strong></a>
+    <button class="icon-button" type="button" data-nav-toggle aria-controls="oldalsav" aria-expanded="false" aria-label="Navigáció megnyitása" title="Navigáció">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+  </header>
+  <main class="main-content">
+    
+<header class="page-header reveal">
+  <div class="kicker">Források és módszertan</div>
+  <h1>Szakmai források és módszertan</h1>
+  <p class="page-lead">Az eredményadatok a letöltött Dante Labs PDF-ekből, a GenVue/Genetic Genie variánslistából és a helyben elemzett nyers VCF-ből származnak. Az általános értelmezés elsődleges, szakmai vagy hatósági forrásokra támaszkodik.</p>
+  <div class="page-meta">Források ellenőrizve: 2026. szeptember 23.</div>
+</header>
+
+<section class="method-grid reveal">
+  <article><span>01</span><h2>PDF-audit</h2><p>Minden oldal szövegkinyeréssel ellenőrizve, a klinikai jelzőmondatok és variánsblokkok egymással összevetve.</p></article>
+  <article><span>02</span><h2>Pontos variánsegyezés</h2><p>A fontos variánsok a gén, a HGVS-jelölés és a fehérjeváltozás alapján a jelenlegi ClinVar-rekordhoz illesztve.</p></article>
+  <article><span>03</span><h2>Klinikai keret</h2><p>Az öröklésmód, a tünetek és a teendők GeneReviews, MedlinePlus, CDC és CPIC források alapján értelmezve.</p></article>
+  <article><span>04</span><h2>VCF-egyezés</h2><p>A 4,8 millió GRCh37 hívás helyben, allélpontosan összevetve a ClinVar 2026-09-13 kiadásával; személyes genomadat nem került feltöltésre.</p></article>
+</section>
+<section class="source-list reveal" data-source-list></section>
+<section class="limitations reveal">
+  <h2>Értelmezési korlátok</h2>
+  <ul>
+    <li>A fogyasztói WGS és automatikus riport nem azonos akkreditált klinikai genetikai vizsgálattal.</li>
+    <li>A VUS nem pozitív lelet, és önmagában nem alapoz meg kezelést vagy intenzívebb szűrést.</li>
+    <li>A negatív paneleredmény nem zár ki minden betegséget, ritka allélt, kópiaszám- vagy szerkezeti eltérést.</li>
+    <li>A gyógyszermárkák csak példák; hatóanyag, országos elérhetőség és összetétel változhat.</li>
+    <li>A ClinVar-besorolások frissülhetnek; jelentős döntés előtt klinikai szakembernek újra kell ellenőriznie.</li>
+  </ul>
+</section>
+
+    <footer class="site-footer">
+      <span>Frissítve: 2026. szeptember 23.</span>
+      <span>175 PDF · nyers VCF · jelenlegi ClinVar · magyar magyarázat</span>
+    </footer>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

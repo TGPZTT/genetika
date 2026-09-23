@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Farmakogenomikai eredmények és gyógyszerpéldák.">
+  <title>Gyógyszerek | Genomikai leletek</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="medications">
+  <aside class="sidebar" id="oldalsav">
+    <a class="brand" href="index.html" aria-label="Genomikai leletek - áttekintés">
+      <span class="brand-symbol"><i data-lucide="dna" aria-hidden="true"></i></span>
+      <span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span>
+    </a>
+    <nav aria-label="Fő navigáció"><a class="nav-link" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span>Áttekintés</span></a>
+<a class="nav-link" href="summary.html"><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Gyakorlati riport</span></a>
+<a class="nav-link" href="actions.html"><i data-lucide="list-checks" aria-hidden="true"></i><span>Teendők</span></a>
+<a class="nav-link" href="variants.html"><i data-lucide="binary" aria-hidden="true"></i><span>Variánsok</span></a>
+<a class="nav-link" href="vcf.html"><i data-lucide="dna" aria-hidden="true"></i><span>VCF-elemzés</span></a>
+<a class="nav-link" href="family.html"><i data-lucide="git-branch" aria-hidden="true"></i><span>Családi előzmény</span></a>
+<a class="nav-link active" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span>Gyógyszerek</span></a>
+<a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span>Életmód</span></a>
+<a class="nav-link" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Klinikai riportok</span></a>
+<a class="nav-link" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span>Riportkönyvtár</span></a>
+<a class="nav-link" href="sources.html"><i data-lucide="book-open-check" aria-hidden="true"></i><span>Források</span></a></nav>
+    <div class="privacy-note">
+      <i data-lucide="shield-check" aria-hidden="true"></i>
+      <div><strong>Helyi és privát</strong><span>A felület a gépeden fut. Nem diagnózis és nem kezelési utasítás.</span></div>
+    </div>
+  </aside>
+  <header class="mobile-bar">
+    <a class="mobile-brand" href="index.html"><i data-lucide="dna" aria-hidden="true"></i><strong>GENOMIKAI LELETEK</strong></a>
+    <button class="icon-button" type="button" data-nav-toggle aria-controls="oldalsav" aria-expanded="false" aria-label="Navigáció megnyitása" title="Navigáció">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+  </header>
+  <main class="main-content">
+    
+<header class="page-header reveal">
+  <div class="kicker">Farmakogenomika</div>
+  <h1>Farmakogenomikai eredmények</h1>
+  <p class="page-lead">Minden tételnél látszik a gén, a variáns vagy diplotípus, a magyar jelentés és legalább egy készítménypélda. A márkanév csak azonosítási példa; elérhetősége országonként változhat.</p>
+  <div class="page-meta">15 értékelt gén-gyógyszer kapcsolat · 6 nem megbízhatóan értékelt gén</div>
+</header>
+
+<section class="med-alert reveal"><i data-lucide="shield-alert" aria-hidden="true"></i><div><strong>Gyógyszert ne módosíts önállóan.</strong><p>A genetika egy döntési adat a diagnózis, dózis, labor, életkor, társbetegségek és gyógyszerkölcsönhatások mellett. A készítménypélda nem javaslat.</p></div></section>
+<section class="med-summary reveal">
+  <a href="#slco1b1"><span>SLCO1B1</span><strong>Sztatin</strong><small>Izompanasz-kockázat</small></a>
+  <a href="#cyp2c19"><span>CYP2C19</span><strong>Klopidogrél</strong><small>Csökkent aktiválás</small></a>
+  <a href="#vkorc1"><span>VKORC1 + CYP4F2</span><strong>Warfarin</strong><small>Dózisérzékenység</small></a>
+  <a href="#ugt1a1"><span>UGT1A1</span><strong>Irinotekán</strong><small>Magasabb toxicitás</small></a>
+  <a href="#nat2"><span>NAT2</span><strong>Izoniazid és mások</strong><small>Lassú acetilálás</small></a>
+</section>
+<section class="content-band flush reveal">
+  <div class="filter-row">
+    <label class="search-field"><i data-lucide="search" aria-hidden="true"></i><span class="sr-only">Gyógyszer keresése</span><input type="search" data-med-search placeholder="Keresés hatóanyag, készítmény vagy gén szerint"></label>
+    <label><span class="sr-only">Jelentőség szűrése</span><select data-med-filter><option value="">Minden gyógyszeres eredmény</option><option value="high">Kiemelten fontos</option><option value="watch">Figyelendő</option><option value="normal">Szokásos válasz</option><option value="context">Kontextusfüggő</option><option value="unresolved">Nincs értékelve</option></select></label>
+  </div>
+  <div class="med-grid" data-medication-grid></div>
+</section>
+
+    <footer class="site-footer">
+      <span>Frissítve: 2026. szeptember 23.</span>
+      <span>175 PDF · nyers VCF · jelenlegi ClinVar · magyar magyarázat</span>
+    </footer>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

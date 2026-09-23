@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Genetikai eredményekhez kapcsolódó klinikai teendők prioritás szerint.">
+  <title>Teendők | Genomikai leletek</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="actions">
+  <aside class="sidebar" id="oldalsav">
+    <a class="brand" href="index.html" aria-label="Genomikai leletek - áttekintés">
+      <span class="brand-symbol"><i data-lucide="dna" aria-hidden="true"></i></span>
+      <span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span>
+    </a>
+    <nav aria-label="Fő navigáció"><a class="nav-link" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span>Áttekintés</span></a>
+<a class="nav-link" href="summary.html"><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Gyakorlati riport</span></a>
+<a class="nav-link active" href="actions.html"><i data-lucide="list-checks" aria-hidden="true"></i><span>Teendők</span></a>
+<a class="nav-link" href="variants.html"><i data-lucide="binary" aria-hidden="true"></i><span>Variánsok</span></a>
+<a class="nav-link" href="vcf.html"><i data-lucide="dna" aria-hidden="true"></i><span>VCF-elemzés</span></a>
+<a class="nav-link" href="family.html"><i data-lucide="git-branch" aria-hidden="true"></i><span>Családi előzmény</span></a>
+<a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span>Gyógyszerek</span></a>
+<a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span>Életmód</span></a>
+<a class="nav-link" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Klinikai riportok</span></a>
+<a class="nav-link" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span>Riportkönyvtár</span></a>
+<a class="nav-link" href="sources.html"><i data-lucide="book-open-check" aria-hidden="true"></i><span>Források</span></a></nav>
+    <div class="privacy-note">
+      <i data-lucide="shield-check" aria-hidden="true"></i>
+      <div><strong>Helyi és privát</strong><span>A felület a gépeden fut. Nem diagnózis és nem kezelési utasítás.</span></div>
+    </div>
+  </aside>
+  <header class="mobile-bar">
+    <a class="mobile-brand" href="index.html"><i data-lucide="dna" aria-hidden="true"></i><strong>GENOMIKAI LELETEK</strong></a>
+    <button class="icon-button" type="button" data-nav-toggle aria-controls="oldalsav" aria-expanded="false" aria-label="Navigáció megnyitása" title="Navigáció">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+  </header>
+  <main class="main-content">
+    
+<header class="page-header reveal">
+  <div class="kicker">Klinikai teendők</div>
+  <h1>Prioritások és következő lépések</h1>
+  <p class="page-lead">A klinikai jelentőség szerint rendezett lista elkülöníti a megerősítendő leleteket a tünet- vagy helyzetfüggő adatoktól.</p>
+  <div class="page-meta">5 kiemelt tétel · 0 igazolt sürgősségi diagnózis</div>
+</header>
+
+<section class="risk-key reveal" aria-label="Prioritási szintek">
+  <div><span class="risk-mark high"></span><strong>Magas gyakorlati jelentőség</strong><span>Időpontot vagy megerősítő vizsgálatot érdemes szervezni.</span></div>
+  <div><span class="risk-mark confirm"></span><strong>Megerősítendő</strong><span>A fogyasztói WGS-lelet nem elég a diagnózishoz.</span></div>
+  <div><span class="risk-mark context"></span><strong>Helyzetfüggő</strong><span>Gyógyszer, tünet vagy családi előzmény aktiválja.</span></div>
+</section>
+<section class="action-list reveal" data-focus-list></section>
+<section class="safety-strip reveal">
+  <i data-lucide="triangle-alert" aria-hidden="true"></i>
+  <div><strong>Azonnali tünet nem várhat genetikai konzultációra.</strong><p>Hirtelen nehézlégzés, mellkasi fájdalom, ájulás, vérköpés, vagy meningitisre utaló magas láz és tarkókötöttség esetén sürgősségi ellátás szükséges.</p></div>
+</section>
+
+    <footer class="site-footer">
+      <span>Frissítve: 2026. szeptember 23.</span>
+      <span>175 PDF · nyers VCF · jelenlegi ClinVar · magyar magyarázat</span>
+    </footer>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
