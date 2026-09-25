@@ -3,110 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A 175 genetikai riport magyar, klinikai áttekintése.">
+  <meta name="description" content="A genetikai eredmények gyakorlati és klinikai áttekintése.">
   <title>Áttekintés | Genomikai leletek</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body data-page="home">
+<body data-page="overview">
   <aside class="sidebar" id="oldalsav">
-    <a class="brand" href="index.html" aria-label="Genomikai leletek - áttekintés">
-      <span class="brand-symbol"><i data-lucide="dna" aria-hidden="true"></i></span>
-      <span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span>
-    </a>
-    <nav aria-label="Fő navigáció"><a class="nav-link active" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span>Áttekintés</span></a>
-<a class="nav-link" href="summary.html"><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Gyakorlati riport</span></a>
-<a class="nav-link" href="actions.html"><i data-lucide="list-checks" aria-hidden="true"></i><span>Teendők</span></a>
-<a class="nav-link" href="variants.html"><i data-lucide="binary" aria-hidden="true"></i><span>Variánsok</span></a>
-<a class="nav-link" href="vcf.html"><i data-lucide="dna" aria-hidden="true"></i><span>VCF-elemzés</span></a>
-<a class="nav-link" href="family.html"><i data-lucide="git-branch" aria-hidden="true"></i><span>Családi előzmény</span></a>
-<a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span>Gyógyszerek</span></a>
-<a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span>Életmód</span></a>
-<a class="nav-link" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Klinikai riportok</span></a>
-<a class="nav-link" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span>Riportkönyvtár</span></a>
-<a class="nav-link" href="sources.html"><i data-lucide="book-open-check" aria-hidden="true"></i><span>Források</span></a></nav>
-    <div class="privacy-note">
-      <i data-lucide="shield-check" aria-hidden="true"></i>
-      <div><strong>Helyi és privát</strong><span>A felület a gépeden fut. Nem diagnózis és nem kezelési utasítás.</span></div>
-    </div>
+    <a class="brand" href="index.html"><span class="brand-mark"><i data-lucide="dna"></i></span><span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span></a>
+    <nav aria-label="Fő navigáció"><a class="nav-link active" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span><strong>Áttekintés</strong><small>Lényeg és teendők</small></span></a><a class="nav-link" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span><strong>Klinikai eredmények</strong><small>Betegségek, VUS, BAM</small></span></a><a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span><strong>Gyógyszerek</strong><small>Gén-gyógyszer jelzések</small></span></a><a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span><strong>Életmód</strong><small>Alvás, sport, táplálkozás</small></span></a><a class="nav-link" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span><strong>Riporttár</strong><small>PDF-ek, források, módszer</small></span></a></nav>
+    <div class="local-note"><i data-lucide="shield-check"></i><span><strong>Helyi feldolgozás</strong><small>A genomfájlok nem kerültek feltöltésre.</small></span></div>
   </aside>
-  <header class="mobile-bar">
-    <a class="mobile-brand" href="index.html"><i data-lucide="dna" aria-hidden="true"></i><strong>GENOMIKAI LELETEK</strong></a>
-    <button class="icon-button" type="button" data-nav-toggle aria-controls="oldalsav" aria-expanded="false" aria-label="Navigáció megnyitása" title="Navigáció">
-      <i data-lucide="menu" aria-hidden="true"></i>
-    </button>
-  </header>
-  <main class="main-content">
+  <header class="mobile-bar"><a href="index.html"><i data-lucide="dna"></i><strong>GENOMIKAI LELETEK</strong></a><button type="button" data-nav-toggle aria-label="Navigáció megnyitása"><i data-lucide="menu"></i></button></header>
+  <main>
     
 <section class="hero">
-  <img class="hero-image" src="assets/genome-hero.webp" alt="" aria-hidden="true">
-  <div class="hero-shade"></div>
-  <div class="hero-content reveal">
-    <div class="hero-kicker"><span class="live-dot"></span>175 genetikai riport alapos, magyar áttekintése</div>
-    <h1>Genetikai eredmények</h1>
-    <p>175 PDF és a nyers VCF klinikai jelentőség szerint rendezett, ellenőrzött összesítése.</p>
-    <div class="hero-actions">
-      <a class="button primary" href="summary.html"><i data-lucide="clipboard-check" aria-hidden="true"></i>Gyakorlati riport</a>
-      <a class="button glass" href="vcf.html"><i data-lucide="dna" aria-hidden="true"></i>VCF-elemzés</a>
-    </div>
-  </div>
-  <div class="hero-stats" aria-label="Fő összesítés">
-    <div><strong>175</strong><span>feldolgozott PDF</span></div>
-    <div><strong>2</strong><span>klinikai találatos panel</span></div>
-    <div><strong>7</strong><span>kiemelt gyógyszerjelzés</span></div>
-    <div><strong>4,8 M</strong><span>helyben vizsgált VCF-hívás</span></div>
-  </div>
-</section>
-<section class="content-band intro-band reveal">
-  <div class="section-heading">
-    <div><span class="section-index">01</span><h2>Kiemelt eredmények</h2></div>
-    <a class="text-link" href="actions.html">Részletes teendők <i data-lucide="arrow-right" aria-hidden="true"></i></a>
-  </div>
-  <div class="priority-rail">
-    <a href="variants.html#f5" class="priority-item high"><span class="priority-code">01</span><div><strong>F5 Leiden</strong><span>Klinikai megerősítés; műtét és immobilitás előtt fontos</span></div><i data-lucide="chevron-right" aria-hidden="true"></i></a>
-    <a href="actions.html#gilbert" class="priority-item context"><span class="priority-code">02</span><div><strong>Gilbert-szindróma</strong><span>Ismert állapot; homozigóta UGT1A1-promótermintázattal összhangban</span></div><i data-lucide="chevron-right" aria-hidden="true"></i></a>
-    <a href="variants.html#c8b" class="priority-item confirm"><span class="priority-code">03</span><div><strong>C8B</strong><span>Patogén, heterozigóta; valószínű hordozói állapot</span></div><i data-lucide="chevron-right" aria-hidden="true"></i></a>
-    <a href="variants.html#lama3" class="priority-item confirm"><span class="priority-code">04</span><div><strong>LAMA3</strong><span>Patogén, heterozigóta; valószínű hordozói állapot</span></div><i data-lucide="chevron-right" aria-hidden="true"></i></a>
-  </div>
-</section>
-<section class="home-brief reveal" aria-labelledby="rovid-riport-cim">
-  <div class="home-brief-copy">
-    <div class="kicker">Összesített rövid riport</div>
-    <h2 id="rovid-riport-cim">Összesített értelmezés</h2>
-    <p><strong>Orvosi prioritás:</strong> az F5 Leiden klinikai megerősítése, valamint a C8B- és LAMA3-leletek hordozói jelentőségének tisztázása. A VCF-ben ismert patogén TP53-egyezés nem található.</p>
-    <p><strong>Ismert Gilbert-szindróma:</strong> a Dante-riport és a nyers VCF homozigóta UGT1A1*28-nak megfelelő promótermintázata ezt támogatja. Általában jóindulatú, de irinotekán, atazanavir és más UGT1A1-érzékeny gyógyszerek előtt jelezni kell.</p>
-    <p><strong>Mindennapok:</strong> délelőttre korlátozott koffeinbevitel, megfelelő alvásablak, vegyes erő- és állóképességi terhelés, fokozatos intenzitás. Éhezés és kiszáradás Gilbert-epizódot provokálhat.</p>
-  </div>
-  <div class="brief-actions">
-    <a class="button primary" href="summary.html"><i data-lucide="file-check-2" aria-hidden="true"></i>Teljes rövid riport</a>
-    <a class="text-link" href="lifestyle.html">Életmód- és sporteredmények <i data-lucide="arrow-right" aria-hidden="true"></i></a>
-  </div>
-</section>
-<section class="content-band constellation-band reveal">
-  <div class="section-heading">
-    <div><span class="section-index">02</span><h2>A teljes riporttérkép</h2></div>
-    <div class="legend" aria-label="Jelmagyarázat"><span><i class="swatch negative"></i>113 felsorolt variáns nélkül</span><span><i class="swatch informational"></i>55 csak információs variánssal</span><span><i class="swatch known"></i>1 ismert állapot</span><span><i class="swatch finding"></i>2 klinikai lelettel</span><span><i class="swatch main"></i>4 főriport</span></div>
-  </div>
-  <div class="report-constellation" data-report-constellation aria-label="175 riport állapottérképe"></div>
-  <p class="constellation-caption">Minden négyzet egy letöltött PDF. Az információs variáns nem diagnózis; a borostyán Gilbert-panel az ismert állapottal és a VCF-genotípussal együtt értelmezett.</p>
-</section>
-<section class="content-band reveal">
-  <div class="section-heading">
-    <div><span class="section-index">03</span><h2>Kockázati összkép</h2></div>
-  </div>
-  <div class="answer-grid">
-    <article class="answer-block calm"><i data-lucide="heart-pulse" aria-hidden="true"></i><h3>Most, tünet nélkül</h3><p>Nincs olyan eredmény, amely önmagában sürgősségi állapotot vagy jelenlegi betegséget bizonyítana.</p></article>
-    <article class="answer-block act"><i data-lucide="clipboard-check" aria-hidden="true"></i><h3>Tervezhető teendők</h3><p>F5 Leiden megerősítés, valamint a C8B- és LAMA3-eredmények klinikai validálása.</p></article>
-    <article class="answer-block context"><i data-lucide="pill" aria-hidden="true"></i><h3>Helyzetfüggő adatok</h3><p>A gyógyszeres eredmények felíráskor, a Gilbert-szindróma pedig különösen UGT1A1-érzékeny gyógyszereknél válik fontossá.</p></article>
+  <img src="assets/genome-hero.webp" alt="" class="hero-image"><canvas data-genome-scene aria-hidden="true"></canvas><div class="hero-overlay"></div>
+  <div class="hero-copy reveal"><span class="signal"><i></i> ÖSSZESÍTETT GENETIKAI EREDMÉNYEK</span><h1>Genetikai leletek<br><em>klinikai összefoglalója</em></h1><p>A Dante-riportok, a nyers VCF és a BAM célzott ellenőrzésének eredményei, a jelenlegi szakmai besorolások alapján.</p><div class="hero-links"><a class="btn primary" href="clinical.html"><i data-lucide="stethoscope"></i>Klinikai összefoglaló</a><a class="btn ghost" href="#rovid-riport"><i data-lucide="arrow-down"></i>Teendők</a></div></div>
+  <div class="hero-dashboard">
+    <div><span>Riportok</span><strong>175</strong><small>175 egyedi PDF</small></div>
+    <div><span>Dante VUS</span><strong>118</strong><small>mind ellenőrizve BAM-ban</small></div>
+    <div><span>Daganati P/LP</span><strong>0</strong><small>a célzott panelen</small></div>
+    <div><span>BAM-lefedettség</span><strong>23,9×</strong><small>156 daganatgén átlaga</small></div>
   </div>
 </section>
 
-    <footer class="site-footer">
-      <span>Frissítve: 2026. szeptember 23.</span>
-      <span>175 PDF · nyers VCF · jelenlegi ClinVar · magyar magyarázat</span>
-    </footer>
+<section class="status-ribbon reveal" aria-label="Eredmények állapot szerint">
+  <div class="status-block action"><i data-lucide="alert-circle"></i><span><strong>Teendőt igényel</strong><small>F5 Leiden klinikai megerősítése</small></span></div>
+  <div class="status-block known"><i data-lucide="circle-check"></i><span><strong>Ismert állapot</strong><small>Gilbert-szindrómával összhangban</small></span></div>
+  <div class="status-block carrier"><i data-lucide="copy"></i><span><strong>Hordozói leletek</strong><small>C8B, LAMA3, M1AP</small></span></div>
+  <div class="status-block calm"><i data-lucide="shield-check"></i><span><strong>Daganati panel</strong><small>Kóroki eltérés nem azonosítható</small></span></div>
+</section>
+
+<section class="band" id="rovid-riport">
+  <div class="section-title reveal"><span>ÖSSZEFOGLALÓ</span><h2>Eredmények és teendők</h2><p>A klinikailag fontos eredmények és a javasolt következő lépések röviden.</p></div>
+  <div class="brief-grid">
+    <article class="brief-lead reveal tilt"><span class="level high">KIEMELT TEENDŐK</span><h3>Orvosi egyeztetést igénylő eredmények</h3><ol><li><strong>F5 Leiden:</strong> célzott klinikai megerősítés; műtét, gipsz, tartós mozdulatlanság vagy kórházi kezelés előtt jelezendő.</li><li><strong>Gyógyszerek:</strong> UGT1A1/Gilbert, CYP2C19, SLCO1B1, VKORC1 és NAT2 eredmény felírás előtt áttekintendő.</li><li><strong>Onkogenetika:</strong> a 33 éves korban jelentkező anyai szarkóma miatt klinikai genetikai konzultáció indokolt akkor is, ha a BAM-panel negatív.</li><li><strong>Szemészet és hallás:</strong> családi zöldhályog miatt rendszeres szemvizsgálat; öröklött halláscsökkenésnél audiogram és lehetőség szerint az érintett rokon vizsgálata.</li></ol></article>
+    <div class="brief-stack reveal">
+      <article><i data-lucide="moon-star"></i><div><h3>Alvás</h3><p>Köztes kronotípus és lassabb koffeinlebontás. A koffein délelőttre időzítése, állandó ébredési idő és 7,5–9 órás alvásablak a legjobban próbálható beavatkozás.</p></div></article>
+      <article><i data-lucide="activity"></i><div><h3>Sport</h3><p>Vegyes, nem specializáló genetikai profil. Nincs genetikai alapú sporttilalom; a fokozatos terhelés, aerob és erősítő mozgás kombinációja, valamint a tünetek követése fontosabb az egyedi markereknél.</p></div></article>
+      <article><i data-lucide="salad"></i><div><h3>Táplálkozás</h3><p>Nincs kötelező „genetikai diéta”. Testsúlytrend, rost- és fehérjebevitel, valamint labor alapján vezérelt D-vitamin-pótlás használható; az alkohol genetikai lebontása nem teszi kockázatmentessé a fogyasztást.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="band band-dark">
+  <div class="section-title reveal"><span>BESOROLÁSOK</span><h2>A leletek klinikai jelentősége</h2><p>A variáns jelenléte és annak egészségügyi jelentősége külön értékelendő.</p></div>
+  <div class="meaning-scale reveal">
+    <article class="danger"><span>01</span><h3>Klinikailag fontos</h3><p>Jelenleg az F5 Leiden a legfontosabb, megerősítendő egészségügyi kockázati lelet.</p></article>
+    <article class="known"><span>02</span><h3>Ismert / magyarázó</h3><p>Az UGT1A1-mintázat és a BAM az ismert Gilbert-szindrómával összhangban áll.</p></article>
+    <article class="uncertain"><span>03</span><h3>Bizonytalan</h3><p>A VUS nem pozitív diagnózis. A 118-ból 18 marad valódi VUS, de egyik sem jelenlegi önálló P/LP lelet.</p></article>
+    <article class="benign"><span>04</span><h3>Jóindulatú irány</h3><p>91 Dante-VUS mai adatok alapján gyakori, jóindulatú irányú vagy klinikailag nem használható jel.</p></article>
+  </div>
+</section>
+
+<section class="band">
+  <div class="section-title reveal"><span>TOVÁBBI EREDMÉNYEK</span><h2>Részletes adatok</h2></div>
+  <div class="portal-grid reveal">
+    <a href="clinical.html" class="portal clinical tilt"><i data-lucide="stethoscope"></i><h3>Klinikai eredmények</h3><p>Daganatgenetika, VUS-ok, BAM-ellenőrzés, hallás, zöldhályog és hajritkulás.</p><b>Megnyitás <i data-lucide="arrow-up-right"></i></b></a>
+    <a href="medications.html" class="portal meds tilt"><i data-lucide="pill"></i><h3>Gyógyszerek</h3><p>Hatóanyagok, készítménypéldák és felírás előtt figyelembe veendő eredmények.</p><b>Megnyitás <i data-lucide="arrow-up-right"></i></b></a>
+    <a href="lifestyle.html" class="portal life tilt"><i data-lucide="activity"></i><h3>Életmód</h3><p>Az alváshoz, sporthoz és táplálkozáshoz kapcsolódó genetikai eredmények.</p><b>Megnyitás <i data-lucide="arrow-up-right"></i></b></a>
+    <a href="reports.html" class="portal reports tilt"><i data-lucide="folder-open"></i><h3>Riporttár</h3><p>Az eredeti PDF-ek, az elemzési módszerek és a szakmai források.</p><b>Megnyitás <i data-lucide="arrow-up-right"></i></b></a>
+  </div>
+</section>
+    <footer><span>Frissítve: 2026. szeptember 25.</span><span>175 PDF · GRCh37 VCF · 35,62 GiB BAM · ClinVar 2026-09-13</span></footer>
   </main>
   <script src="assets/data.js"></script>
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/lucide.min.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

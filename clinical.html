@@ -3,73 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A 171 klinikai riport magyar, kereshető listája.">
-  <title>Klinikai riportok | Genomikai leletek</title>
+  <meta name="description" content="Klinikai panelek, VUS- és BAM-elemzés magyarul.">
+  <title>Klinikai eredmények | Genomikai leletek</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-page="clinical">
   <aside class="sidebar" id="oldalsav">
-    <a class="brand" href="index.html" aria-label="Genomikai leletek - áttekintés">
-      <span class="brand-symbol"><i data-lucide="dna" aria-hidden="true"></i></span>
-      <span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span>
-    </a>
-    <nav aria-label="Fő navigáció"><a class="nav-link" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span>Áttekintés</span></a>
-<a class="nav-link" href="summary.html"><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Gyakorlati riport</span></a>
-<a class="nav-link" href="actions.html"><i data-lucide="list-checks" aria-hidden="true"></i><span>Teendők</span></a>
-<a class="nav-link" href="variants.html"><i data-lucide="binary" aria-hidden="true"></i><span>Variánsok</span></a>
-<a class="nav-link" href="vcf.html"><i data-lucide="dna" aria-hidden="true"></i><span>VCF-elemzés</span></a>
-<a class="nav-link" href="family.html"><i data-lucide="git-branch" aria-hidden="true"></i><span>Családi előzmény</span></a>
-<a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span>Gyógyszerek</span></a>
-<a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span>Életmód</span></a>
-<a class="nav-link active" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Klinikai riportok</span></a>
-<a class="nav-link" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span>Riportkönyvtár</span></a>
-<a class="nav-link" href="sources.html"><i data-lucide="book-open-check" aria-hidden="true"></i><span>Források</span></a></nav>
-    <div class="privacy-note">
-      <i data-lucide="shield-check" aria-hidden="true"></i>
-      <div><strong>Helyi és privát</strong><span>A felület a gépeden fut. Nem diagnózis és nem kezelési utasítás.</span></div>
-    </div>
+    <a class="brand" href="index.html"><span class="brand-mark"><i data-lucide="dna"></i></span><span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span></a>
+    <nav aria-label="Fő navigáció"><a class="nav-link" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span><strong>Áttekintés</strong><small>Lényeg és teendők</small></span></a><a class="nav-link active" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span><strong>Klinikai eredmények</strong><small>Betegségek, VUS, BAM</small></span></a><a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span><strong>Gyógyszerek</strong><small>Gén-gyógyszer jelzések</small></span></a><a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span><strong>Életmód</strong><small>Alvás, sport, táplálkozás</small></span></a><a class="nav-link" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span><strong>Riporttár</strong><small>PDF-ek, források, módszer</small></span></a></nav>
+    <div class="local-note"><i data-lucide="shield-check"></i><span><strong>Helyi feldolgozás</strong><small>A genomfájlok nem kerültek feltöltésre.</small></span></div>
   </aside>
-  <header class="mobile-bar">
-    <a class="mobile-brand" href="index.html"><i data-lucide="dna" aria-hidden="true"></i><strong>GENOMIKAI LELETEK</strong></a>
-    <button class="icon-button" type="button" data-nav-toggle aria-controls="oldalsav" aria-expanded="false" aria-label="Navigáció megnyitása" title="Navigáció">
-      <i data-lucide="menu" aria-hidden="true"></i>
-    </button>
-  </header>
-  <main class="main-content">
+  <header class="mobile-bar"><a href="index.html"><i data-lucide="dna"></i><strong>GENOMIKAI LELETEK</strong></a><button type="button" data-nav-toggle aria-label="Navigáció megnyitása"><i data-lucide="menu"></i></button></header>
+  <main>
     
-<header class="page-header reveal">
-  <div class="kicker">171 klinikai panel</div>
-  <h1>Klinikai riportok összesítése</h1>
-  <p class="page-lead">A cím a vizsgált kórképet jelenti. Az állapotjelző különválasztja a klinikai leletet, az ismert állapotot támogató genotípust, a csak információs variánst és a felsorolt variáns nélküli panelt.</p>
-  <div class="page-meta">113 variáns nélkül · 55 csak információs variánssal · 1 ismert állapot · 2 klinikai lelet</div>
+<header class="page-head reveal">
+  <span class="eyebrow">KLINIKAI EREDMÉNYEK</span><h1>Betegségek, variánsok és BAM-ellenőrzés</h1><p>A variánsok klinikai besorolása, öröklésmódja és BAM-támogatása. Minden eltérés mellett szerepel annak egészségügyi jelentése és az esetleges teendő.</p>
+  <div class="head-facts">118 Dante-VUS ellenőrizve · 115 BAM-mal technikailag támogatott · 0 jelenlegi önálló P/LP a VUS-listában</div>
 </header>
+<nav class="section-nav reveal" aria-label="Oldalon belüli navigáció"><a href="#kiemelt">Kiemelt leletek</a><a href="#daganatok">Daganatok</a><a href="#csaladi">Hallás, szem, haj</a><a href="#vus">VUS-audit</a><a href="#panelek">Dante-panelek</a></nav>
 
-<section class="clinical-summary reveal">
-  <div class="donut" role="img" aria-label="171 klinikai riportból 113-ban nincs felsorolt variáns"><span><strong>113</strong><small>felsorolt variáns nélkül</small></span></div>
-  <div class="clinical-summary-copy"><span class="status-badge context">Négyféle státusz</span><h2>A Dante „Friss eredmények” kártyája nem azonos a patogén klinikai lelettel</h2><p>Az információs VUS vagy jóindulatú variáns miatt egy betegség neve megjelenhet a főoldalon, miközben a PDF nem közöl patogén vagy valószínűleg patogén leletet. A Gilbert-panel külön kategória: a homozigóta UGT1A1-promótermintázat és az ismert állapot együtt klinikailag értelmezhető.</p></div>
+<section class="classification-key reveal" aria-label="Variánsbesorolások magyarázata">
+  <div><strong>P / LP</strong><span>Patogén vagy valószínűleg patogén: erős betegségkapcsolat, de az öröklésmód és a génpéldányok száma továbbra is döntő.</span></div>
+  <div><strong>VUS</strong><span>Bizonytalan jelentőségű: kevés vagy egymásnak ellentmondó bizonyíték; kezelésre és szűrésre önmagában nem használható.</span></div>
+  <div><strong>Ellentmondó</strong><span>A laborok nem ugyanarra a besorolásra jutottak. A bizonyítékok darabszáma, minősége és frissessége külön értékelendő.</span></div>
+  <div><strong>B / LB</strong><span>Jóindulatú vagy valószínűleg jóindulatú: az adott eltérés nem tekinthető a megjelölt betegség okának.</span></div>
 </section>
-<section class="clinical-status-key reveal" aria-label="Klinikai státuszok">
-  <article class="status-negative"><span>01</span><h2>Kóroki eltérés nem azonosítható</h2><p>A panelben felsorolt patogén, valószínűleg patogén vagy információs variáns nem található. Ez az adott vizsgálat eredménye, nem minden lehetséges ok kizárása.</p></article>
-  <article class="status-informational"><span>02</span><h2>Információs vagy bizonytalan</h2><p>VUS vagy jóindulatú variáns található, klinikai diagnózist nem igazol. Kezelés vagy szűrés önmagában erre nem alapozható.</p></article>
-  <article class="status-known"><span>03</span><h2>Ismert állapotot támogat</h2><p>A Gilbert-panel genotípusa az ismert állapottal és a VCF-fel összhangban áll. Gyógyszeres és tüneti helyzetekben releváns.</p></article>
-  <article class="status-clinical"><span>04</span><h2>Klinikailag megerősítendő</h2><p>Patogén variáns került azonosításra. Az öröklésmód és az egyetlen érintett génpéldány miatt jelenleg főként hordozói jelentőség valószínű.</p></article>
-</section>
-<section class="content-band flush reveal">
-  <div class="filter-row">
-    <label class="search-field"><i data-lucide="search" aria-hidden="true"></i><span class="sr-only">Riport keresése</span><input type="search" data-clinical-search placeholder="Keresés betegség vagy kategória szerint"></label>
-    <label><span class="sr-only">Kategória szűrése</span><select data-clinical-category></select></label>
-    <label><span class="sr-only">Állapot szűrése</span><select data-clinical-status><option value="">Minden állapot</option><option value="clinical">Klinikai lelet</option><option value="known">Ismert állapot</option><option value="informational">Csak információs variáns</option><option value="negative">Felsorolt variáns nélkül</option></select></label>
+
+<section class="band" id="kiemelt">
+  <div class="section-title reveal"><span>KIEMELT LELETEK</span><h2>Kiemelt klinikai eredmények</h2></div>
+  <div class="finding-ledger reveal">
+    <article class="finding-row high"><span class="finding-state">MEGERŐSÍTENDŐ</span><div><h3>F5 Leiden, heterozigóta</h3><code>F5 c.1601G&gt;A · p.Arg534Gln · rs6025 · BAM 14/24</code><p>Öröklött vénás trombózishajlam. A kockázat helyzettől függően nő, különösen műtét, tartós mozdulatlanság, gipsz, hosszú utazás vagy korábbi trombózis mellett.</p></div><a href="https://www.ncbi.nlm.nih.gov/books/NBK1368/" target="_blank">Forrás <i data-lucide="external-link"></i></a></article>
+    <article class="finding-row known"><span class="finding-state">ISMERT ÁLLAPOT</span><div><h3>Gilbert-szindróma</h3><code>UGT1A1*28-mintázat · homozigóta · BAM 16 alternatív olvasat</code><p>Az enzim csökkent működése időszakos, nem konjugált bilirubin-emelkedést okozhat. A Dante-riport, a VCF, a BAM és a megadott klinikai állapot egymással összhangban áll.</p></div><a href="https://www.ncbi.nlm.nih.gov/books/NBK470200/" target="_blank">Forrás <i data-lucide="external-link"></i></a></article>
+    <article class="finding-row carrier"><span class="finding-state">HORDOZÓSÁG</span><div><h3>C8B, LAMA3 és M1AP</h3><code>C8B p.Arg428Ter · LAMA3 p.Cys75ValfsTer65 · M1AP c.676dup</code><p>Mindhárom recesszív kórképhez kapcsolódik. Egyetlen érintett génpéldány rendszerint hordozói állapotot jelent; önmagában nem igazolja a C8-hiányt, junctionalis epidermolysis bullosát vagy M1AP-eredetű meddőséget.</p></div><a href="#vus">Részletek <i data-lucide="arrow-down"></i></a></article>
+    <article class="finding-row uncertain"><span class="finding-state">FENOTÍPUSFÜGGŐ</span><div><h3>AR és NR2E3 ellentmondó besorolással</h3><code>AR p.Gln799Glu · NR2E3 c.951del</code><p>A laborbejegyzések megoszlanak, a jelenlegi összkép nem igazol önálló betegséget. Az AR-variáns nem megbízható magyarázata a hajritkulásnak; az NR2E3 csak jellegzetes szemészeti tünetek mellett érdemel célzott klinikai ellenőrzést.</p></div><a href="#vus">VUS-tábla <i data-lucide="arrow-down"></i></a></article>
   </div>
+</section>
+
+<section class="band band-cancer" id="daganatok">
+  <div class="section-title reveal"><span>DAGANATGENETIKA</span><h2>Daganatgenetikai eredmények</h2><p>A VUS-ok száma önmagában nem jelzi a daganatkockázatot. A klinikai jelentőséget a jelenlegi besorolás és a bizonyítékok minősége határozza meg.</p></div>
+  <div class="cancer-dashboard reveal">
+    <div class="cancer-score"><span>ÖRÖKLÖTT SZARKÓMAPANEL</span><strong>0</strong><p>patogén vagy valószínűleg patogén rövid variáns</p><div><b>0</b> exonromboló szerkezeti variáns</div><div><b>0</b> génszintű kópiaszám-jel</div><div><b>TP53</b> 100% ≥10× céllefedettség</div></div>
+    <div class="cancer-copy"><h3>BAM-alapú ellenőrzés</h3><p>A BAM-ból 44 szarkómahajlam-gén és összesen 156 daganatgén célzott újrahívása történt. A rövid variánsok, az exonokat érintő nagyobb átrendeződések és a génszintű lefedettségi jelek között öröklött szarkómahajlamot igazoló eltérés nem található.</p><div class="vus-breakdown"><span><strong>29</strong>Dante daganati VUS</span><span><strong>27</strong>jóindulatú irány / gyakori jel</span><span><strong>1</strong>kockázati marker</span><span><strong>1</strong>valódi VUS: CDC73 3′ UTR</span></div><p class="caution"><i data-lucide="info"></i>A CDC73 nem kódoló VUS egyetlen beküldő bizonytalan értékelése, funkcionális bizonyíték nélkül. Nem pozitív daganatgenetikai lelet és nem alapoz meg kezelést vagy extra szűrést.</p></div>
+  </div>
+  <div class="family-context reveal"><i data-lucide="git-branch"></i><div><h3>Rögzített családi előzmény</h3><p>Az elsőfokú rokon 33 éves kori szarkómája önmagában indokolhat klinikai onkogenetikai konzultációt. A negatív BAM-panel csökkenti egy ismert, kódoló öröklött ok valószínűségét, de nem helyettesíti a családfa, a szövettan és szükség esetén a klinikai mintából végzett vizsgálat együttes értékelését.</p></div></div>
+</section>
+
+<section class="band" id="csaladi">
+  <div class="section-title reveal"><span>CSALÁDI ELŐZMÉNYEKHEZ KAPCSOLÓDÓ VIZSGÁLATOK</span><h2>Hallás, zöldhályog és hajritkulás</h2><p>A Dante-riportnál szélesebb, BAM-alapú génvizsgálat eredményei.</p></div>
+  <div class="trait-grid">
+    <article class="trait-panel reveal"><header><i data-lucide="ear"></i><span>165 GÉN</span><h3>Öröklött halláscsökkenés</h3></header><div class="trait-result ok"><strong>Kóroki rövid variáns nem azonosítható</strong><p>A négy VUS gyakori és nem kódoló; ritka, kanonikus fehérjeromboló eltérés nincs. Exont érintő szerkezeti variáns nem található.</p></div><ul><li>Átlagos céllefedettség: 26.73×</li><li>A célbázisok 98.2%-a legalább 10×</li><li>Gyengébben mérhető gének: STRC, OTOA, COL4A5 és néhány X-kromoszómás gén</li></ul><p class="next"><strong>Gyakorlati lépés:</strong> audiogram, fül-orr-gégészeti értékelés, és lehetőség szerint először az érintett rokon klinikai vizsgálata. Ez adja a legnagyobb esélyt az öröklött ok azonosítására.</p></article>
+    <article class="trait-panel reveal"><header><i data-lucide="eye"></i><span>18 GÉN</span><h3>Zöldhályog</h3></header><div class="trait-result ok"><strong>Kóroki paneltalálat nem azonosítható</strong><p>A Dante CYP1B1-eltérései jóindulatúak; a kibővített panelen sincs P/LP rövid variáns vagy exonromboló szerkezeti eltérés.</p></div><ul><li>Négy közös VUS mind gyakori, nem kódoló variáns</li><li>Az LMX1B-ben jelzett kis intronikus átrendeződés nem érint exont, klinikai jelentősége nem igazolt</li><li>A felnőttkori zöldhályog többnyire összetett, nem egyetlen gén okozza</li></ul><p class="next"><strong>Gyakorlati lépés:</strong> családi előzmény miatt 1–2 évente pupillatágításos szemvizsgálat, szemnyomás-, látóideg- és szükség esetén látótér-ellenőrzéssel.</p></article>
+    <article class="trait-panel reveal"><header><i data-lucide="scan-face"></i><span>5 KUTATÁSI MARKER</span><h3>Férfias típusú hajritkulás</h3></header><div class="trait-result context"><strong>4/5 helyen jelen van kockázati allél</strong><p>Az X-kromoszómás AR/EDA2R régió és három autoszomális jel összhangban áll a megfigyelt hajritkulással.</p></div><ul><li>Az apai kopaszodás hiánya nem zárja ki a sokgénes hajlamot</li><li>Az AR p.Gln799Glu VUS nem azonos a gyakori hajritkulási markerrel</li><li>A modell előrejelzése mérsékelt, súlyosságot nem jósol</li></ul><p class="next"><strong>Gyakorlati lépés:</strong> a diagnózist bőrgyógyászati kép alapján állítják fel; a genetikai markerek kezelésválasztásra nem alkalmasak.</p></article>
+  </div>
+  <details class="technical-note reveal"><summary><i data-lucide="microscope"></i>Technikai részletek és lefedettségi korlátok</summary><div><p>A 183 gén 1 267 751 exon- és splice-közeli bázisán az átlagos mélység 26.73×; 98.2% érte el a 10×, 80.6% a 20× mélységet. A Manta 25 jó minőségű, génterületen belüli szerkezeti jelet adott, de egyik sem metsz kódoló exont. STRC, OTOA és más pszeudogénes vagy ismétlődő régiók rövid olvasatos WGS-ből nehezebben ítélhetők meg, ezért a vizsgálat nem tekinthető teljes klinikai negatív leletnek.</p></div></details>
+</section>
+
+<section class="band band-dark" id="vus">
+  <div class="section-title reveal"><span>VUS-OK FELÜLVIZSGÁLATA</span><h2>A 118 Dante-VUS jelenlegi értelmezése</h2><p>A BAM a variáns technikai jelenlétét ellenőrzi. A klinikai jelentőséget a ClinVar-adatok, a gyakoriság, az öröklésmód és a funkcionális bizonyíték határozza meg.</p></div>
+  <div class="vus-explain reveal"><div><strong>Miért marad VUS?</strong><p>Nincs elég betegeset, családi együttöröklődési adat vagy funkcionális vizsgálat ahhoz, hogy kóroki vagy jóindulatú irányba lehessen sorolni.</p></div><div><strong>Mit ad hozzá a BAM?</strong><p>Megmutatja, hogy a szekvenciaeltérés valóban látszik-e az eredeti olvasatokban. A technikai megerősítés nem teszi automatikusan kórokivá.</p></div><div><strong>Mikor lesz fontos?</strong><p>Akkor, ha a tünet pontosan illik a génhez, az öröklésmód teljesül, és új klinikai vagy családi bizonyíték jelenik meg.</p></div></div>
+  <div class="vus-metrics reveal"><span><strong>91</strong>jóindulatú irány</span><span><strong>18</strong>valódi VUS</span><span><strong>4</strong>ismert / hordozói / kockázati jel</span><span><strong>2</strong>kiemelt bizonytalan</span><span><strong>3</strong>gyenge vagy nem támogatott BAM-jel</span><span><strong>0</strong>önálló jelenlegi P/LP</span></div>
+  <div class="filters reveal"><label class="search"><i data-lucide="search"></i><input type="search" data-vus-search placeholder="Gén, variáns, riport vagy jelentés keresése"></label><select data-vus-filter><option value="">Minden besorolás</option><option value="vus">Valódi VUS</option><option value="kiemelt_bizonytalan">Kiemelt bizonytalan</option><option value="hordozosag">Hordozóság</option><option value="ismert_allapot">Ismert állapot</option><option value="joindulatu_irany">Jóindulatú irány</option><option value="gyenge_technikai">Gyenge BAM-jel</option><option value="nem_megerositett">BAM-mal nem támogatott</option></select><span data-vus-count></span></div>
+  <div class="vus-table-wrap reveal"><table class="vus-table"><thead><tr><th>Gén és variáns</th><th>Mai jelentés</th><th>BAM</th><th>Riport</th><th></th></tr></thead><tbody data-vus-table></tbody></table></div>
+</section>
+
+<section class="band" id="panelek">
+  <div class="section-title reveal"><span>DANTE KLINIKAI RIPORTOK</span><h2>A 171 klinikai panel</h2><p>A betegség neve a vizsgált panel címe. A státusz mutatja, hogy szerepel-e benne klinikailag értékelhető eredmény.</p></div>
+  <div class="filters reveal"><label class="search"><i data-lucide="search"></i><input type="search" data-clinical-search placeholder="Betegség, gén vagy kategória keresése"></label><select data-clinical-category></select><select data-clinical-status><option value="">Minden státusz</option><option value="clinical">Klinikai lelet</option><option value="known">Ismert állapot</option><option value="informational">Információs / VUS</option><option value="negative">Kóroki eltérés nélkül</option></select></div>
   <div class="clinical-list" data-clinical-list></div>
 </section>
-
-    <footer class="site-footer">
-      <span>Frissítve: 2026. szeptember 23.</span>
-      <span>175 PDF · nyers VCF · jelenlegi ClinVar · magyar magyarázat</span>
-    </footer>
+    <footer><span>Frissítve: 2026. szeptember 25.</span><span>175 PDF · GRCh37 VCF · 35,62 GiB BAM · ClinVar 2026-09-13</span></footer>
   </main>
   <script src="assets/data.js"></script>
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/lucide.min.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

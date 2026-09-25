@@ -3,68 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mind a 175 letöltött PDF kereshető könyvtára.">
-  <title>Riportkönyvtár | Genomikai leletek</title>
+  <meta name="description" content="Minden Dante PDF, forrás és elemzési módszer.">
+  <title>Riporttár | Genomikai leletek</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-page="reports">
   <aside class="sidebar" id="oldalsav">
-    <a class="brand" href="index.html" aria-label="Genomikai leletek - áttekintés">
-      <span class="brand-symbol"><i data-lucide="dna" aria-hidden="true"></i></span>
-      <span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span>
-    </a>
-    <nav aria-label="Fő navigáció"><a class="nav-link" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span>Áttekintés</span></a>
-<a class="nav-link" href="summary.html"><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Gyakorlati riport</span></a>
-<a class="nav-link" href="actions.html"><i data-lucide="list-checks" aria-hidden="true"></i><span>Teendők</span></a>
-<a class="nav-link" href="variants.html"><i data-lucide="binary" aria-hidden="true"></i><span>Variánsok</span></a>
-<a class="nav-link" href="vcf.html"><i data-lucide="dna" aria-hidden="true"></i><span>VCF-elemzés</span></a>
-<a class="nav-link" href="family.html"><i data-lucide="git-branch" aria-hidden="true"></i><span>Családi előzmény</span></a>
-<a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span>Gyógyszerek</span></a>
-<a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span>Életmód</span></a>
-<a class="nav-link" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span>Klinikai riportok</span></a>
-<a class="nav-link active" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span>Riportkönyvtár</span></a>
-<a class="nav-link" href="sources.html"><i data-lucide="book-open-check" aria-hidden="true"></i><span>Források</span></a></nav>
-    <div class="privacy-note">
-      <i data-lucide="shield-check" aria-hidden="true"></i>
-      <div><strong>Helyi és privát</strong><span>A felület a gépeden fut. Nem diagnózis és nem kezelési utasítás.</span></div>
-    </div>
+    <a class="brand" href="index.html"><span class="brand-mark"><i data-lucide="dna"></i></span><span><strong>GENOMIKAI LELETEK</strong><small>Klinikai eredményközpont</small></span></a>
+    <nav aria-label="Fő navigáció"><a class="nav-link" href="index.html"><i data-lucide="layout-dashboard" aria-hidden="true"></i><span><strong>Áttekintés</strong><small>Lényeg és teendők</small></span></a><a class="nav-link" href="clinical.html"><i data-lucide="stethoscope" aria-hidden="true"></i><span><strong>Klinikai eredmények</strong><small>Betegségek, VUS, BAM</small></span></a><a class="nav-link" href="medications.html"><i data-lucide="pill" aria-hidden="true"></i><span><strong>Gyógyszerek</strong><small>Gén-gyógyszer jelzések</small></span></a><a class="nav-link" href="lifestyle.html"><i data-lucide="activity" aria-hidden="true"></i><span><strong>Életmód</strong><small>Alvás, sport, táplálkozás</small></span></a><a class="nav-link active" href="reports.html"><i data-lucide="folder-open" aria-hidden="true"></i><span><strong>Riporttár</strong><small>PDF-ek, források, módszer</small></span></a></nav>
+    <div class="local-note"><i data-lucide="shield-check"></i><span><strong>Helyi feldolgozás</strong><small>A genomfájlok nem kerültek feltöltésre.</small></span></div>
   </aside>
-  <header class="mobile-bar">
-    <a class="mobile-brand" href="index.html"><i data-lucide="dna" aria-hidden="true"></i><strong>GENOMIKAI LELETEK</strong></a>
-    <button class="icon-button" type="button" data-nav-toggle aria-controls="oldalsav" aria-expanded="false" aria-label="Navigáció megnyitása" title="Navigáció">
-      <i data-lucide="menu" aria-hidden="true"></i>
-    </button>
-  </header>
-  <main class="main-content">
+  <header class="mobile-bar"><a href="index.html"><i data-lucide="dna"></i><strong>GENOMIKAI LELETEK</strong></a><button type="button" data-nav-toggle aria-label="Navigáció megnyitása"><i data-lucide="menu"></i></button></header>
+  <main>
     
-<header class="page-header reveal">
-  <div class="kicker">Teljes helyi könyvtár</div>
-  <h1>Mind a 175 letöltött PDF</h1>
-  <p class="page-lead">Kereshető, kategorizált és duplikátummentes lista. Minden gomb a helyben tárolt eredeti Dante Labs PDF-et nyitja meg.</p>
-  <div class="page-meta">175/175 olvasható · 175 egyedi fájl · 0 duplikátum</div>
+<header class="page-head reveal">
+  <span class="eyebrow">RIPORTTÁR ÉS MÓDSZER</span><h1>Minden eredeti riport és szakmai forrás</h1><p>A 175 duplikátummentes PDF, az alkalmazott BAM/VCF-eljárások és a klinikai értelmezés hivatkozásai egy helyen.</p>
+  <div class="head-facts">175/175 olvasható · 0 duplikátum · 0 sérült PDF</div>
 </header>
-
-<section class="audit-strip reveal">
-  <div><strong>175</strong><span>olvasható PDF</span></div>
-  <div><strong>175</strong><span>egyedi SHA-256 tartalom</span></div>
-  <div><strong>0</strong><span>sérült vagy üres oldal</span></div>
-  <div><strong>0</strong><span>duplikált riport</span></div>
-</section>
-<section class="content-band flush reveal">
-  <div class="filter-row">
-    <label class="search-field"><i data-lucide="search" aria-hidden="true"></i><span class="sr-only">PDF keresése</span><input type="search" data-report-search placeholder="Keresés cím, kategória vagy állapot szerint"></label>
-    <label><span class="sr-only">Riporttípus</span><select data-report-type><option value="">Minden riporttípus</option><option value="Klinikai riport">Klinikai riport</option><option value="Főriport">Főriport</option></select></label>
+<section class="band compact-top">
+  <div class="tabs reveal" role="tablist"><button class="active" data-report-tab="library">Riportok</button><button data-report-tab="method">Módszertan</button><button data-report-tab="sources">Források</button></div>
+  <div data-report-panel="library">
+    <div class="filters reveal"><label class="search"><i data-lucide="search"></i><input type="search" data-report-search placeholder="Cím, kategória vagy állapot keresése"></label><select data-report-type><option value="">Minden riport</option><option value="Klinikai riport">Klinikai riport</option><option value="Főriport">Főriport</option></select></div>
+    <div class="library-list" data-report-library></div>
   </div>
-  <div class="library-list" data-report-library></div>
+  <div data-report-panel="method" hidden>
+    <div class="method-flow reveal"><article><span>01</span><h3>PDF-audit</h3><p>175 PDF minden oldalának szöveges ellenőrzése, duplikáció- és hibavizsgálat.</p></article><article><span>02</span><h3>VCF-egyezés</h3><p>4,8 millió GRCh37 variáns pontos allélillesztése a ClinVar 2026-09-13 kiadásához.</p></article><article><span>03</span><h3>BAM-ellenőrzés</h3><p>569 millió olvasat; variánsonkénti olvasattámogatás, célzott újrahívás, lefedettség és Manta szerkezeti elemzés.</p></article><article><span>04</span><h3>Értelmezés</h3><p>ClinVar, GeneReviews, PanelApp, CPIC és elsődleges szakirodalom; öröklésmód és fenotípus figyelembevételével.</p></article></div>
+    <div class="method-detail reveal"><h3>Mit vizsgált a BAM?</h3><p><strong>Minden 118 Dante-VUS</strong> közvetlen olvasattámogatását; <strong>156 daganatgén</strong> rövid, szerkezeti és lefedettségi eltéréseit; <strong>44 szarkómahajlam-gént</strong>; továbbá <strong>165 hallás- és 18 zöldhályoggént</strong>. A célterületek 98,20%-a legalább 10× mélységet ért el a hallás/szemészeti vizsgálatban.</p><h3>Korlátok</h3><p>A 24–27× rövid olvasatos WGS nem akkreditált klinikai panel. Ismétlődő és pszeudogénes régiók, mozaikosság, epigenetikai eltérések, minden mély intronikus vagy távoli szabályozó variáns nem zárható ki. Klinikai döntés előtt megerősítő vizsgálat szükséges.</p></div>
+  </div>
+  <div data-report-panel="sources" hidden><div class="source-list" data-source-list></div></div>
 </section>
-
-    <footer class="site-footer">
-      <span>Frissítve: 2026. szeptember 23.</span>
-      <span>175 PDF · nyers VCF · jelenlegi ClinVar · magyar magyarázat</span>
-    </footer>
+    <footer><span>Frissítve: 2026. szeptember 25.</span><span>175 PDF · GRCh37 VCF · 35,62 GiB BAM · ClinVar 2026-09-13</span></footer>
   </main>
   <script src="assets/data.js"></script>
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/lucide.min.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
